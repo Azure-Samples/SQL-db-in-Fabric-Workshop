@@ -1,0 +1,17 @@
+{
+  "name": "graphqlwithwrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node findsessions.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@azure/identity": "^4.4.1",
+    "prompt-sync": "^4.2.0",
+    "readline": "^1.3.0"
+  }
+}
