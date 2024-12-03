@@ -22,7 +22,7 @@ This workshop covering *SQL database in Microsoft Fabric* requires the following
 
 ---
 
-Next, continue to [**Introduction and Getting Started**.](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/01%20-%20Introduction%20and%20Getting%20Started/01%20-%20Introduction%20and%20Getting%20Started.md)
+Next, continue to [**Introduction and Getting Started**.](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/01%20-%20Introduction%20and%20Getting%20Started/01%20-%20Introduction%20and%20Getting%20Started.md)
 
 ---
 
