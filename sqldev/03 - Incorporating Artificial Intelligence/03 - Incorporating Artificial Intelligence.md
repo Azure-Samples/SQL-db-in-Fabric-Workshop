@@ -12,7 +12,7 @@ In this module, you will deploy an instance of Azure OpenAI with the appropriate
 You'll cover these topics in this module:
 
 1. [Create an Instance of Azure OpenAI and Deploy the Appropriate Model](03%20-%20Incorporating%20Artificial%20Intelligence.md#31-deploy-azure-openai)
-2. [Configure Your SQL Database to Leverage Your Azure OpenAI Endpoint to Generate Embeddings](03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md#32-configure-your-sql-database-in-fabric-to-connect-to-azure-openai)
+2. [Configure Your SQL Database to Leverage Your Azure OpenAI Endpoint to Generate Embeddings](03%20-%20Incorporating%20Artificial%20Intelligence.md#32-configure-your-sql-database-in-fabric-to-connect-to-azure-openai)
 3. [See SQL's Vector Database Support in Action, as You Generate Embeddings to Be Used for Similarity Search](03%20-%20Incorporating%20Artificial%20Intelligence.md#33-generate-embeddings-for-existing-data-and-set-up-triggers-for-new-inserts)
 
 #### References
