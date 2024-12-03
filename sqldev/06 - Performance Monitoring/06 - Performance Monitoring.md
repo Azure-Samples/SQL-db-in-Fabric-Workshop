@@ -9,11 +9,11 @@ In this module, you will learn about managing the lifecycle of your application 
 
 You'll cover these topics in this module:
 
-1. [Find your highest CPU consuming queries using performance dashboard](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#61-find-your-highest-cpu-consuming-queries-using-performance-dashboard)
-2. [Track query details and view query performance within performance dashboard](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#62-track-query-details-and-see-performance-history)
-3. [Investigate User Connections on Performance Dashboard](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#63-investigate-user-connections-on-performance-dashboard)
-4. [Learn About Alerts in Performance Dashboard](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#64-learn-about-alerts-in-performance-dashboard)
-5. [Explore Performance Dashboard](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#65-explore-performance-dashboard)
+1. [Find your highest CPU consuming queries using performance dashboard](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#61-find-your-highest-cpu-consuming-queries-using-performance-dashboard)
+2. [Track query details and view query performance within performance dashboard](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#62-track-query-details-and-see-performance-history)
+3. [Investigate User Connections on Performance Dashboard](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#63-investigate-user-connections-on-performance-dashboard)
+4. [Learn About Alerts in Performance Dashboard](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#64-learn-about-alerts-in-performance-dashboard)
+5. [Explore Performance Dashboard](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md#65-explore-performance-dashboard)
 
 ### 6.1 Find Your Highest CPU Consuming Queries Using Performance Dashboard
 
