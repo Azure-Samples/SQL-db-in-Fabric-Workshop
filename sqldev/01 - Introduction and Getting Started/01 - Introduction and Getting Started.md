@@ -145,6 +145,6 @@ GO
 
 ---
 
-Congratulations! You have successfully created your database in a new Fabric workspace. The database is appropriately set up for you to explore how this database integrates with other Fabric artifacts.  You are ready to move on to the next section: [Dataflows, Notebooks, and Reports](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/02%20-%20Dataflows%2C%20Notebooks%2C%20and%20Reports/02%20-%20Dataflows%2C%20Notebooks%2C%20and%20Reports.md)
+Congratulations! You have successfully created your database in a new Fabric workspace. The database is appropriately set up for you to explore how this database integrates with other Fabric artifacts.  You are ready to move on to the next section: [Dataflows, Notebooks, and Reports](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/02%20-%20Dataflows%2C%20Notebooks%2C%20and%20Reports/02%20-%20Dataflows%2C%20Notebooks%2C%20and%20Reports.md)
 
 ---
