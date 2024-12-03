@@ -11,9 +11,9 @@ In this module, you will deploy an instance of Azure OpenAI with the appropriate
 
 You'll cover these topics in this module:
 
-1. [Create an Instance of Azure OpenAI and Deploy the Appropriate Model](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md#31-deploy-azure-openai)
-2. [Configure Your SQL Database to Leverage Your Azure OpenAI Endpoint to Generate Embeddings](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md#32-configure-your-sql-database-in-fabric-to-connect-to-azure-openai)
-3. [See SQL's Vector Database Support in Action, as You Generate Embeddings to Be Used for Similarity Search](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md#33-generate-embeddings-for-existing-data-and-set-up-triggers-for-new-inserts)
+1. [Create an Instance of Azure OpenAI and Deploy the Appropriate Model](03%20-%20Incorporating%20Artificial%20Intelligence.md#31-deploy-azure-openai)
+2. [Configure Your SQL Database to Leverage Your Azure OpenAI Endpoint to Generate Embeddings](03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md#32-configure-your-sql-database-in-fabric-to-connect-to-azure-openai)
+3. [See SQL's Vector Database Support in Action, as You Generate Embeddings to Be Used for Similarity Search](03%20-%20Incorporating%20Artificial%20Intelligence.md#33-generate-embeddings-for-existing-data-and-set-up-triggers-for-new-inserts)
 
 #### References
 You may find the material in [this blog](https://devblogs.microsoft.com/azure-sql/whats-a-vector-anyway/) to be a useful explaination of vector databases.
@@ -46,7 +46,7 @@ You have now deployed the appropriate model for OpenAI for us to use with our da
 
 In order to leverage Azure OpenAI with your SQL database, you will need to create a credential so that the database can authenticate. Then, it's as simple as making a few calls to get appropriate embeddings.
 
-1. Open the query editor window, and copy-paste the text from [`04 Create Credential.sql`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/04%20-%20Create%20Credential.sql) into the window. Insert the endpoint and keys that you set aside in the previous step into the endpoint and key values in the T-SQL script, then run it.
+1. Open the query editor window, and copy-paste the text from [`04 Create Credential.sql`](04%20-%20Create%20Credential.sql) into the window. Insert the endpoint and keys that you set aside in the previous step into the endpoint and key values in the T-SQL script, then run it.
    ```sql
    -- To create a credential, you need to create a master key.
    if not exists(select * from sys.symmetric_keys where [name] = '##MS_DatabaseMasterKey##')
@@ -65,7 +65,7 @@ In order to leverage Azure OpenAI with your SQL database, you will need to creat
     CLOSE Master key;
     ```
 2. Next, let's create a function that calls into OpenAI to get an embedding.
-Copy and paste the text from [`05 Get Embedding.sql`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/05%20-%20Get%20Embedding.sql) into an editor window and, again, copy/paste your endpoint into the URL and credential fields.
+Copy and paste the text from [`05 Get Embedding.sql`](05%20-%20Get%20Embedding.sql) into an editor window and, again, copy/paste your endpoint into the URL and credential fields.
 
    ```sql
    
@@ -112,7 +112,7 @@ Copy and paste the text from [`05 Get Embedding.sql`](https://github.com/Azure-S
       go
    ```
 
-3. You can test it by running the code in [`06 Get Embedding Sample.sql`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/06%20-%20Get%20Embedding%20Sample.sql).
+3. You can test it by running the code in [`06 Get Embedding Sample.sql`](06%20-%20Get%20Embedding%20Sample.sql).
 
    ```sql
    Declare @retval int, @embedding varbinary(8000);
@@ -127,7 +127,7 @@ Copy and paste the text from [`05 Get Embedding.sql`](https://github.com/Azure-S
 
 ### 3.3 Generate Embeddings for Existing Data, and Set Up Triggers for New Inserts
 
-1. The following table outlines the next set of SQL scripts and what they do. You can run one at a time, and you can also reference [`this notebook`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/Create%20Vector%20Supported%20Objects.ipynb) to see them laid out nicely. For reference on notebooks in VS Code, you can also see [`this blog`](https://devblogs.microsoft.com/dotnet/net-interactive-with-sql-net-notebooks-in-visual-studio-code/).
+1. The following table outlines the next set of SQL scripts and what they do. You can run one at a time, and you can also reference [`this notebook`](Create%20Vector%20Supported%20Objects.ipynb) to see them laid out nicely. For reference on notebooks in VS Code, you can also see [`this blog`](https://devblogs.microsoft.com/dotnet/net-interactive-with-sql-net-notebooks-in-visual-studio-code/).
 
 | Script | Function |
 |--------|----------|
@@ -144,6 +144,6 @@ Copy and paste the text from [`05 Get Embedding.sql`](https://github.com/Azure-S
 
 ---
 
-Congratulations! You have completed this module on creating and integrating artificial intelligence within your SQL database in Fabric. Now that you have these objects created, it is time to move on to the next section - [Building a simple application with GraphQL](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md).
+Congratulations! You have completed this module on creating and integrating artificial intelligence within your SQL database in Fabric. Now that you have these objects created, it is time to move on to the next section - [Building a simple application with GraphQL](../04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md).
 
 ---
