@@ -9,8 +9,8 @@ In this module, you will learn how to create a simple application on top of a st
 
 You'll cover these topics in this module:
 
-1. [Create a Stored Procedure that Leverages Embedding Generation for Similarity Search](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md#41-create-a-stored-procedure-that-leverages-embedding-generation-for-similarity-search)
-2. [Create a Simple JavaScript Application to Search for Sessions on a Given Theme Using the GraphQL API Builder](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md#42-generate-an-application-using-fabrics-graphql-api-builder)
+1. [Create a Stored Procedure that Leverages Embedding Generation for Similarity Search](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md#41-create-a-stored-procedure-that-leverages-embedding-generation-for-similarity-search)
+2. [Create a Simple JavaScript Application to Search for Sessions on a Given Theme Using the GraphQL API Builder](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/04%20-%20Create%20a%20simple%20application.md#42-generate-an-application-using-fabrics-graphql-api-builder)
 
 ### 4.1 Create a Stored Procedure that Leverages Embedding Generation for Similarity Search
 
@@ -18,7 +18,7 @@ SQL database now supports vector similarity search functionality. This means it 
 
 #### Activity: Create Find_sessions Stored Procedure
 
-1. Open up and examine [`Find Sessions.sql`](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/14%20-%20Find%20Sessions.sql). This stored procedure takes as an input whatever string you give it and searches the database for sessions similar to the provided search string.
+1. Open up and examine [`Find Sessions.sql`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/14%20-%20Find%20Sessions.sql). This stored procedure takes as an input whatever string you give it and searches the database for sessions similar to the provided search string.
 2. Go ahead and create the stored procedure.
 3. Now, try running it with a few things to see what kind of results you get:
 
@@ -34,7 +34,7 @@ exec find_sessions 'technology and community'
 
 One thing to note is that you could write a C# application that directly calls `find_sessions` and parse the results appropriately for output. However, for GraphQL, you need to do something different. This is because GraphQL does not support extended stored procedures - either called directly or indirectly - when generating GraphQL endpoints. The `invoke-external_rest_endpoint` call in `get_embedding` disqualifies `find_sessions` for direct GraphQL support.
 
-To accommodate this, you will create a wrapper around `find_sessions` that defines the result set. Go ahead and run [`Find Sessions Wrapper.sql`](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/15%20-%20Find%20Sessions%20Wrapper.sql) to create this GraphQL-compatible stored procedure.
+To accommodate this, you will create a wrapper around `find_sessions` that defines the result set. Go ahead and run [`Find Sessions Wrapper.sql`](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/04%20-%20Create%20a%20simple%20application/15%20-%20Find%20Sessions%20Wrapper.sql) to create this GraphQL-compatible stored procedure.
 ```sql
 -- Calling find_sessions and defining the result set
 -- This is needed for GraphQL API because 
@@ -131,6 +131,6 @@ With these modifications, you now have a program that asks what kind of sessions
 
 ---
 
-Congratulations! You have now created a simple console application that connects to your SQL database via GraphQL and returns the results of `find_sessions` - allowing you and others to find sessions on topics that interest them.  Now, it is time to productize what you have built by incoporating best practices for [Application Lifecyle Management](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md).
+Congratulations! You have now created a simple console application that connects to your SQL database via GraphQL and returns the results of `find_sessions` - allowing you and others to find sessions on topics that interest them.  Now, it is time to productize what you have built by incoporating best practices for [Application Lifecyle Management](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md).
 
 ---
