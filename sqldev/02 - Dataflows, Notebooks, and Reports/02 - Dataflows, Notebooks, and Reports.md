@@ -98,6 +98,6 @@ Now you can automatically leverage the views you created in our notebooks for re
 
 ---
 
-Congratulations! You have now imported data using dataflows, explored that data with notebooks, and generated a report over that data!  You are ready to move on to the next module which introduces AI into our solution: [Incorporating Artificial Intelligence](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md)
+Congratulations! You have now imported data using dataflows, explored that data with notebooks, and generated a report over that data!  You are ready to move on to the next module which introduces AI into our solution: [Incorporating Artificial Intelligence](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/03%20-%20Incorporating%20Artificial%20Intelligence/03%20-%20Incorporating%20Artificial%20Intelligence.md)
 
 ---
