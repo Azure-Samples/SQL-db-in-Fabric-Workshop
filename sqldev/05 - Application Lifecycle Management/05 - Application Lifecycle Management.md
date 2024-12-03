@@ -9,8 +9,8 @@ In this module, you will learn about managing the lifecycle of your application 
 
 You'll cover these topics in this module:
 
-1. [Checking our database into source control.](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md#51-source-control-for-your-database-and-other-fabric-objects)
-2. [Deployments for SQL database in Fabric](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md#52-deployments-for-sql-database-in-fabric)
+1. [Checking our database into source control.](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md#51-source-control-for-your-database-and-other-fabric-objects)
+2. [Deployments for SQL database in Fabric](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/05%20-%20Application%20Lifecycle%20Management/05%20-%20Application%20Lifecycle%20Management.md#52-deployments-for-sql-database-in-fabric)
 
 ### 5.1 Source control for your database (and other Fabric objects)
 
@@ -218,6 +218,6 @@ sqlpackage /Action:Publish /SourceFile:Sessions_database.dacpac /TargetConnectio
 
 ---
 
-Congratulations! You have completed this module on application lifecycle management for SQL database in Microsoft Fabric.  Finally, take a peek at how SQL database in Microsoft Fabric supports [developer-friendly performance investigations.](https://github.com/akatesmith/SQL-database-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md)
+Congratulations! You have completed this module on application lifecycle management for SQL database in Microsoft Fabric.  Finally, take a peek at how SQL database in Microsoft Fabric supports [developer-friendly performance investigations.](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/06%20-%20Performance%20Monitoring/06%20-%20Performance%20Monitoring.md)
 
 ---
