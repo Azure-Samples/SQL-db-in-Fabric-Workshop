@@ -13,7 +13,7 @@ The workshop is divided into several modules, each focusing on a specific aspect
 
 In this module, you will set up the necessary components and configurations required for the workshop. This includes setting up a PowerBI account, enabling SQL database in your Fabric Tenant settings, creating a Microsoft Azure account, and installing Node.js.
 
-### 1. [Introduction and Getting Started]https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/01%20-%20Introduction%20and%20Getting%20Started/01%20-%20Introduction%20and%20Getting%20Started.md)
+### 1. [Introduction and Getting Started](https://github.com/Azure-Samples/SQL-db-in-Fabric-Workshop/blob/main/sqldev/01%20-%20Introduction%20and%20Getting%20Started/01%20-%20Introduction%20and%20Getting%20Started.md)
 
 This module covers the basics of getting started with SQL database in Fabric. You will learn how to create workspaces, create a database, and seed the database with initial data that will be used in later modules.
 
